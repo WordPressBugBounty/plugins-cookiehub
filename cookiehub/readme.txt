@@ -2,8 +2,8 @@
 Contributors: cookiehub
 Tags: cookie consent, cookie notice, GDPR, CCPA, DSGVO
 Requires at least: 5.2
-Tested up to: 6.6.1
-Stable tag: 1.1.4
+Tested up to: 6.7.1
+Stable tag: 1.1.5
 License: GPLv2 or later
 
 Take control effortlessly with CookieHub – GDPR-compliant solution for cookie management and compliance. 
@@ -133,6 +133,11 @@ Installing CookieHub on your WordPress site is straightforward. Follow these ste
 3. Once configured, CookieHub will start managing consent on your website effectively.
 
 == Changelog ==
+
+= 1.1.5 =
+*Release Date - 27 November 2024*
+
+Tested up to 6.7.1
 
 = 1.1.4 =
 *Release Date - 26 August 2024*
