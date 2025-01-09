@@ -3,7 +3,7 @@
 Plugin Name: CookieHub - Cookie Consent Banner (DSGVO, CCPA, RGPD and GDPR compliance)
 Plugin URI: https://www.cookiehub.com/wordpress
 Description: Take control effortlessly with CookieHub – GDPR-compliant solution for cookie management and compliance. 
-Version: 1.1.5
+Version: 1.2.0
 Author: CookieHub
 Author URI: https://www.cookiehub.com/
 License: GPL2
@@ -45,3 +45,16 @@ function chh_custom_notice() {
         }
     }
 }
+
+function my_plugin_enqueue_script() {
+    if (function_exists( 'wp_has_consent' )) {
+        wp_register_script( 'dcc_wp_consent', plugins_url( 'includes/js/dcc-wp-consent.js?1.2.0', __FILE__ ),  null ,'', false);
+        wp_enqueue_script('dcc_wp_consent');
+    }
+}
+add_action('wp_enqueue_scripts', 'my_plugin_enqueue_script');
+
+function custom_get_consent_type() {
+    return 'optin';
+}
+add_filter('wp_get_consent_type', 'custom_get_consent_type');

@@ -31,13 +31,23 @@ function dcchub_generate_cpm() {
 					$lang = substr($lang, 0, 2);
 				}
 				
-				$cpm = "language: '" . $lang . "'";
+				$cpm = "language: '" . $lang . "',";
+			}
+			
+			if (function_exists( 'wp_has_consent' )) {
+				$onAllow = "onAllow: function(category) {
+					if (typeof wpConsentProxy === 'function') { wpConsentProxy(category, 'allow') };
+				},";
+
+				$onRevoke = "onRevoke: function(category) {
+					if (typeof wpConsentProxy === 'function') { wpConsentProxy(category, 'deny') };
+				}";
 			}
             
         }
     }
 	
-	return $cpm;
+	return $cpm . $onAllow . $onRevoke;
 }
 
 function dcchub_generate_code() {

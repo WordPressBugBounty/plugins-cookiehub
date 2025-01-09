@@ -50,9 +50,9 @@ class DCCHUBAdmin
      */
     public function dcchub_page_init()
     {   
-        wp_register_style( 'dcchub_style', plugins_url( '/css/dcchub-admin.css?1.0.2', __FILE__ ));
+        wp_register_style( 'dcchub_style', plugins_url( '/css/dcchub-admin.css?1.2.0', __FILE__ ));
         wp_enqueue_style('dcchub_style');     
-        wp_register_script( 'dcchub_test', plugins_url( '/js/dcchub-test.js?1.0.2', __FILE__ ),  array ('jquery') ,'', false);
+        wp_register_script( 'dcchub_test', plugins_url( '/js/dcchub-test.js?1.2.0', __FILE__ ),  array ('jquery') ,'', false);
         wp_enqueue_script('dcchub_test');
         wp_localize_script('my-script', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
 
