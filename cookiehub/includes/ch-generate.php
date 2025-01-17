@@ -6,6 +6,8 @@ add_action('wp_head', 'dcchub_generate_code_head');
 
 function dcchub_generate_cpm() {
 	$cpm = '';
+    $onAllow = '';
+	$onRevoke = '';
 	
     $options = get_option( 'dcchub_option_name' );
     if($options != null){

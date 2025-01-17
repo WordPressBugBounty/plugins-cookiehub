@@ -134,6 +134,11 @@ Installing CookieHub on your WordPress site is straightforward. Follow these ste
 
 == Changelog ==
 
+= 1.2.1 =
+*Release Date - 17 January 2025*
+
+Undefined variables fixed
+
 = 1.2.0 =
 *Release Date - 9 January 2025*
 
