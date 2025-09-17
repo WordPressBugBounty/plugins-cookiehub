@@ -2,8 +2,8 @@
 Contributors: cookiehub
 Tags: cookie consent, cookie notice, GDPR, CCPA, DSGVO
 Requires at least: 5.2
-Tested up to: 6.7.1
-Stable tag: 1.2.0
+Tested up to: 6.8.2
+Stable tag: 1.2.2
 License: GPLv2 or later
 
 Take control effortlessly with CookieHub – GDPR-compliant solution for cookie management and compliance. 
@@ -33,6 +33,8 @@ CookieHub offers a powerful and convenient [Cookie Scanner](https://www.cookiehu
 * **GDPR and ePrivacy Compliance:** Stay in line with the latest data protection regulations, including the General Data Protection Regulation (GDPR) and the ePrivacy Directive.
 
 * **Consent Mode v2 Support:** Fully compliant with the latest Google consent mode v2 requirements, ensuring seamless integration and compliance.
+
+* **Clarity Consent API v2 Support:** Fully compatible with Microsoft’s Clarity Consent API v2, enabling precise consent signaling and seamless analytics integration.
 
 * **Advanced Reports:** Gain valuable insights into cookie usage and visitor preferences through built-in analytics. This feature helps you optimize your website’s performance and user experience.
 
@@ -133,6 +135,11 @@ Installing CookieHub on your WordPress site is straightforward. Follow these ste
 3. Once configured, CookieHub will start managing consent on your website effectively.
 
 == Changelog ==
+
+= 1.2.2 =
+*Release Date - 17 September 2025*
+
+Tested up to 6.8.2
 
 = 1.2.1 =
 *Release Date - 17 January 2025*
